@@ -30,10 +30,10 @@ const contacts = [
 ];
 
 // Combiner le nom et le prenom
-const contactsV2 = contacts.map(function (contact) {
+const contactsV2 = contacts.map(function ({ prenom, nom, email }) {
   return {
-    nomComplet: contact.prenom + " " + contact.nom,
-    email: contact.email,
+    nomComplet: prenom + " " + nom,
+    email, //email:email
   };
 });
 
@@ -48,5 +48,3 @@ console.log(noms);
 const test = contacts.map(function (contact) {
   console.log(contact);
 });
-
-

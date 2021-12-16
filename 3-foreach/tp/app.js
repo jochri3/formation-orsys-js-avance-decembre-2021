@@ -29,21 +29,18 @@ const contacts = [
   },
 ];
 
-function creerLigne(contact) {
-  return (
-    "<tr><td>" +
-    contact.id +
-    "</td><td>" +
-    contact.nom +
-    "</td><td>" +
-    contact.prenom +
-    "</td><td>" +
-    contact.email +
-    "</td><td>" +
-    contact.age +
-    "</td></tr>"
-  );
-}
+const creerLigne = (contact) =>
+  "<tr><td>" +
+  contact.id +
+  "</td><td>" +
+  contact.nom +
+  "</td><td>" +
+  contact.prenom +
+  "</td><td>" +
+  contact.email +
+  "</td><td>" +
+  contact.age +
+  "</td></tr>";
 
 const corpDuTableau = document.querySelector("tbody");
 

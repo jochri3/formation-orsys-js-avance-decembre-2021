@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <style>
+      .erreur,
+      .succes {
+        color: white;
+      }
+
+      .erreur {
+        background-color: red;
+      }
+
+      .succes {
+        background-color: green;
+      }
+    </style>
+    <h1>Connexion</h1>
+    <form>
+      <p id="message"></p>
+      <p>
+        Nom complet :
+        <input id="noms" type="text" placeholder="Ex : Chris Lisangola" />
+      </p>
+      <p>
+        Email :
+        <input id="email" type="text" placeholder="Ex : jojo@blabla.com" />
+      </p>
+      <p>
+        Mot de passe :
+        <input id="mdp" type="password" placeholder="Mot de passe" />
+      </p>
+      <input id="btn" type="submit" value="Se connecter" />
+    </form>
+    <script src="./app.js"></script>
+  </body>
+</html>

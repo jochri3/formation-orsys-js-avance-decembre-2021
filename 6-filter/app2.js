@@ -29,14 +29,13 @@ const contacts = [
   },
 ];
 
-const ageSupeA20 = contacts.filter(function (contact) {
-  return contact.age > 20;
+const ageSupeA20 = contacts.filter(function ({ age }) {
+  return age > 20;
 });
 
 const ageSupeA20EtAdressYahoo = contacts.filter(function (contact) {
   return contact.age > 20 && contact.email.includes("yahoo");
 });
-
 
 console.log("Age supérieur à 20 : ", ageSupeA20);
 
